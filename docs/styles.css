@@ -473,6 +473,11 @@ a {
     margin: 0.35rem auto 1.25rem;
 }
 
+.about-mcs-link {
+    display: flex;
+    justify-content: center;
+}
+
 .site-footer {
     border-radius: 1.1rem;
     border: 1px solid rgba(255, 255, 255, 0.14);
