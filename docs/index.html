@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCS Spring 2026 Hackathon</title>
+  <meta name="description" content="Marist Computer Society Spring 2026 Hackathon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#intro" class="brand-link" aria-label="Marist Computer Society home">
+        <img src="assets/image/MCS 2026 Logo Horizontal.png" alt="Marist Computer Society logo" class="brand-logo">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#intro" class="nav-link">Intro</a>
+        <a href="#sponsors" class="nav-link">Sponsors</a>
+        <a href="#themes" class="nav-link">Themes</a>
+        <a href="#awards" class="nav-link">Awards</a>
+        <a href="#activity-day" class="nav-link">Activity Day</a>
+        <a href="#sign-up" class="nav-link">Sign Up</a>
+        <a href="#about-mcs" class="nav-link">About MCS</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro" class="hero section">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="hero-art">
+            <img src="assets/image/SPR26_Hackathon_Logo.png" alt="Hackathon - Spring 2026" class="hero-hackathon-logo">
+          </div>
+          <p class="lead section-intro section-intro--hero">
+            Compete against others in a 48-hour coding challenge, and in the end, be judged from people from IBM, Impiricus, as well as fellow students!
+          </p>
+          <a href="#sign-up" class="btn btn-primary">Register Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section">
+      <div class="container">
+        <h2>Corporate Sponsors</h2>
+        <p class="section-intro">Proudly supported by industry partners helping power student innovation.</p>
+        <div class="sponsor-logos">
+          <a href="https://www.ibm.com/" class="sponsor-link" target="_blank" rel="noopener noreferrer">
+            <img src="assets/image/IBM Logo.png" alt="IBM" class="sponsor-logo-img">
+          </a>
+          <a href="https://www.impiricus.com/" class="sponsor-link" target="_blank" rel="noopener noreferrer">
+            <img src="assets/image/Impiricus Logo.png" alt="Impiricus" class="sponsor-logo-img">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="themes" class="section">
+      <div class="container">
+        <h2>Themes</h2>
+        <p class="section-intro">
+          This hackathon features <strong>two themes</strong>. Your team may build toward one theme, or combine both in a single project.
+          <br><br>
+          The official theme descriptions will be revealed at kickoff. Use the countdown below to see how long until the announcement.
+        </p>
+        <div class="countdown" id="theme-countdown" aria-live="polite">
+          <div class="countdown-unit">
+            <span class="countdown-value" id="cd-days">0</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-value" id="cd-hours">0</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-value" id="cd-minutes">0</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+        </div>
+        <p class="countdown-note">Counting down to theme announcement: <strong>April 17, 2026 · 5:00 PM EST</strong></p>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <h2>Awards</h2>
+        <p class="section-intro">Teams can take home recognition in three categories. Each category is awarded twice. Once based on <strong>student voting</strong> and once based on <strong>judge voting</strong>.</p>
+        <ul class="awards-list">
+          <li class="award-item">
+            <h3>Best Overall Project</h3>
+            <p>Top project across all submissions, judged on impact, execution, and presentation.</p>
+          </li>
+          <li class="award-item">
+            <h3>Best Theme A Project</h3>
+            <p>Strongest work aligned with Theme A. Includes projects that tackle both</p>
+          </li>
+          <li class="award-item">
+            <h3>Best Theme B Project</h3>
+            <p>Strongest work aligned with Theme B. Includes projects that tackle both</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="activity-day" class="section">
+      <div class="container">
+        <h2>Hackathon Schedule</h2>
+        <p class="section-intro">Key events from kickoff through final judging and awards.</p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-time">Friday 4/17 · 5:00-7:00 PM</div>
+            <div class="timeline-card">
+              <h3>Hackathon Start</h3>
+              <p>Theme announcement and kickoff session. Dinner will be served.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-time">Saturday 4/18 · 12:00 PM-3:30 PM</div>
+            <div class="timeline-card">
+              <h3>Activity Period</h3>
+              <p>Eat lunch, build your project, participate in activities, and network with industry professionals.</p>
+            </div>
+          </article>
+        <!-- 
+        TODO: Add activities
+          <article class="timeline-item">
+            <div class="timeline-time">Saturday 4/18 · 12:00 PM-1:00 PM</div>
+            <div class="timeline-card">
+              <h3>Activity #1</h3>
+              <p>To be determined</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-time">Saturday 4/18 · 1:00 PM-2:00 PM</div>
+            <div class="timeline-card">
+              <h3>Activity #2</h3>
+              <p>To be determined</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-time">Saturday 4/18 · 2:00 PM-03:00 PM</div>
+            <div class="timeline-card">
+              <h3>Activity #3</h3>
+              <p>To be determined</p>
+            </div>
+          </article>
+        -->
+          <article class="timeline-item">
+            <div class="timeline-time">Sunday 4/19 · 5:00 PM</div>
+            <div class="timeline-card">
+              <h3>Hackathon End + Networking Dinner</h3>
+              <p>Submission checks, networking, and preparation for presentations in.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-time">Sunday 4/19 · 6:00-8:00 PM</div>
+            <div class="timeline-card">
+              <h3>Presentations, Voting, and Winners</h3>
+              <p>Project presentations, student and judge voting, and award announcements.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sign-up" class="section">
+      <div class="container">
+        <h2>How to Sign Up to Compete</h2>
+        <div class="signup-panel">
+          <p>
+            Form teams of <strong>1-3 students</strong>. Team formation should be submitted by
+            <strong>4/17 at 4:00 PM</strong>. 
+          </p>
+          <p>
+            You may focus on one theme, or incorporate both in your project. At least one team member
+            must present during final presentations.
+          </p>
+          <a href="https://forms.gle/W5qKKnsQ6dGkaXiA8" target="_blank" rel="noopener noreferrer" class="btn btn-cta">
+            Open Official Registration Form
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-mcs" class="section">
+      <div class="container narrow">
+        <h2>What is the Marist Computer Society?</h2>
+        <img src="assets/image/MCS 2026 Logo Transparent.png" alt="Marist Computer Society" class="about-mcs-visual">
+        <p>
+          The Marist Computer Society is a student-run club at <strong>Marist University</strong> focused on Computer Science.
+          Our mission is to cultivate a 
+          community for those studying or interested in Computer Science. 
+          Students seeking to build knowledge, test their skills, build connections,
+          participate in workshops, discuss ideas with fellow students and professors, or showcase their skills 
+          will find ample opportunities within our club. We are open to all students, 
+          regardless of prior experience.  
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="socials" aria-label="Social and club links">
+        <a href="https://github.com/maristcomputersociety" class="footer-social-link" aria-label="GitHub" title="GitHub">
+          <img src="assets/image/social-github.svg" alt="" width="32" height="32" class="footer-social-img">
+        </a>
+        <a href="https://discord.com/invite/z2EZW4kHD8" class="footer-social-link" aria-label="Discord" title="Discord">
+          <img src="assets/image/social-discord.svg" alt="" width="32" height="32" class="footer-social-img">
+        </a>
+        <a href="https://www.instagram.com/marist.computer.society/" class="footer-social-link" aria-label="Instagram" title="Instagram">
+          <img src="assets/image/social-instagram.svg" alt="" width="32" height="32" class="footer-social-img">
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoSWoMBjzr_p6f7Brpdf7ZqSkhdpmiUjlIlD-6325rNnEg9A/viewform" class="footer-social-link" aria-label="Student email list" title="Student email list">
+          <img src="assets/image/social-email.svg" alt="" width="32" height="32" class="footer-social-img">
+        </a>
+      </div>
+      <p>&copy; 2026 Marist Computer Society. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
