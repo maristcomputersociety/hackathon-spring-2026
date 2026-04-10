@@ -434,10 +434,15 @@ a {
 }
 
 .timeline-card {
-    background: rgba(37, 89, 162, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--secondary-deep);
+    border: 1px solid var(--secondary-color);
     border-radius: 0.7rem;
     padding: 0.9rem 1rem;
+}
+
+.timeline-card.activity {
+    background: var(--secondary-soft);
+    border: 1px solid var(--secondary-color);
 }
 
 .signup-panel {
