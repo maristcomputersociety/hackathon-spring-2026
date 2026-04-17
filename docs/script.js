@@ -133,32 +133,29 @@ initScrollReveals();
 
 function updateThemeCountdown() {
   const root = document.getElementById("theme-countdown");
+  const countdownWrap = document.getElementById("theme-countdown-wrap");
+  const themeDetails = document.getElementById("theme-details");
   const elDays = document.getElementById("cd-days");
   const elHours = document.getElementById("cd-hours");
   const elMinutes = document.getElementById("cd-minutes");
-  if (!root || !elDays || !elHours || !elMinutes) return;
+  if (!root || !countdownWrap || !themeDetails || !elDays || !elHours || !elMinutes) return;
 
   const now = Date.now();
-  let diff = THEME_REVEAL_UTC_MS - now;
-
-  if (diff <= 0) {
-    elDays.textContent = "0";
-    elHours.textContent = "0";
-    elMinutes.textContent = "0";
-    root.dataset.complete = "true";
-    return;
-  }
-
-  root.dataset.complete = "false";
+  let diff = Math.max(THEME_REVEAL_UTC_MS - now, 0);
   const days = Math.floor(diff / 86400000);
   diff %= 86400000;
   const hours = Math.floor(diff / 3600000);
   diff %= 3600000;
   const minutes = Math.floor(diff / 60000);
+  const isComplete = days === 0 && hours === 0 && minutes === 0;
 
   elDays.textContent = String(days);
   elHours.textContent = String(hours);
   elMinutes.textContent = String(minutes);
+  root.dataset.complete = String(isComplete);
+
+  countdownWrap.classList.toggle("is-hidden", isComplete);
+  themeDetails.classList.toggle("is-hidden", !isComplete);
 }
 
 updateThemeCountdown();
